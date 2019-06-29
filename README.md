@@ -1,7 +1,7 @@
 # [107-2] Web Programming Final - Fashion Ceiba
 This project was developed by [JacksonHsieh](https://github.com/hsiehjackson), [CynthiaYLiu](https://github.com/CynthiaYLiu), and [PierreSue](https://github.com/PierreSu). You can view this project on the browser through the following link [Fashion-Ceiba](http://fashion-ceiba.herokuapp.com/login) and see the demonstration video by opening [Demo-video](TODO放連結).
 
-<img src="https://i.imgur.com/s3AY3au.jpg" alt="drawing" height="1200" width="800"/> 
+<img src="https://i.imgur.com/s3AY3au.jpg" alt="drawing" height="800" width="1200"/> 
 
 ## 題目名稱/一句話描述這個 project 在做什麼
 ```
