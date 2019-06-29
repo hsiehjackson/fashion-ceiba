@@ -1,0 +1,128 @@
+scalar Upload
+enum MutationType {
+  CREATED
+  UPDATED
+  DELETED
+}
+
+
+type Query {
+    getPDFs: [File]
+    getUSERs: [User!]!
+    getTODOs: [Todo!]!
+    isLogin: User
+    getTeacherPic: [Picture]
+    getStudentPic(student: String!): [Picture]
+    chats: [Chat]
+}
+
+type Mutation {
+    singleUploadPDF (data: Upload!): File!
+    deletePDF(data: DeletePDFInput!):File!
+    createUser(data: CreateUserInput!): User!
+    loginUser(data: LoginUserInput!): User!
+    signoutUser: Boolean!
+    teacherPic(data: PicInput!): Picture!
+    studentPic(data: PicInput!): Picture!
+    createTodo(data: CreateTodoInput): Todo!
+    deleteTodo(id: ID!): Todo!
+    sendMessage(from: String!, message: String!): Chat!
+}
+
+type Subscription {
+  PDF: PDFSubscriptionPayload!
+  PIC: PICSubscriptionPayload!
+  TODO: TODOSubscriptionPayload
+  studentPIC: PICSubscriptionPayload!
+  messageSent: Chat!
+}
+
+
+type PDFSubscriptionPayload {
+  mutation: MutationType!
+  data: File!
+}
+
+
+type PICSubscriptionPayload {
+  mutation: MutationType!
+  data: Picture!
+}
+
+type TODOSubscriptionPayload {
+  mutation: MutationType!
+  data: Todo!
+}
+
+
+type Chat {
+  id: Int!
+  from: String!
+  message: String!
+}
+
+type File {
+    id: ID!
+    filename: String!
+    mimetype: String!
+    encoding: String
+    path: String
+    pdf: String
+}
+
+
+type Picture {
+  id: ID!
+  pic: String!
+  filename: String!
+  page: String!
+  student: String
+}
+
+type User {
+  id: ID!
+  pwd: String!
+  name: String!
+  email: String!
+}
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  pwd: String!
+}
+
+type Todo {
+  id: ID!
+  text: String!
+  time: String!
+}
+
+input CreateTodoInput {
+  text: String!
+  time: String!
+}
+
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  pwd: String!
+}
+
+input LoginUserInput {
+  email: String!
+  pwd: String!
+}
+
+input DeletePDFInput {
+    id: ID!
+    filename: String!
+}
+
+input PicInput{
+    pic: String!
+    filename: String!
+    page: String!
+    student: String
+}
