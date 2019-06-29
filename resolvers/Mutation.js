@@ -261,11 +261,10 @@ const Mutation = {
         return console.log('good');
       });
       
-      let chat = {id: 0, from , message}
+      let chat = {_id: uuidv4(), from , message}
       await models.Chat.find((err, data) => {
         if (err) { console.log('error');}
         else{ 
-          chat.id = data.length + 1
           pubsub.publish('CHAT_CHANNEL', { messageSent: chat })
         }
       });
