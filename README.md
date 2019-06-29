@@ -30,12 +30,10 @@ $ From Deployed Link:
 
 
 ## 其他說明
-```
 * Upload Large Files:
 因為我們的PDF可能檔案過大，所以要處理從client傳到server端，還有server端傳到database的問題。其中從client傳到server端要使用apollo-upload來將檔案切成一個filestream傳，並且要提高上限。再來server傳到client端要使用GridFS來解決mogodb只能上傳上限16mb的問題，將檔案切成小檔案再存到database中。
 * Authentication:
 使用者資訊存在session的cookie當中，每次會存在一段時間才會自動斷開，中途離開到其他網頁，再回來還會是登入狀態。
-```
 
 ## 使用與參考之框架/模組/原始碼
 ```
