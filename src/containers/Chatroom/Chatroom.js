@@ -129,7 +129,7 @@ class Chatroom extends Component {
                         
                                 const messages = data.chats.map(c => {
                                     if(c.from === this.props.author.name){
-                                        return (<div id="message" className="chat-message" style={{"margin":"3px", "width":"95%", "clear":"both"}} >
+                                        return (<div id="message" key={c._id} className="chat-message" style={{"margin":"3px", "width":"95%", "clear":"both"}} >
                                             <div style={{"fontSize":"small", "width":"100%", "textAlign":"right",paddingTop:"15px",paddingBottom:"5px"}}>{c.from}</div>
                                             <div style={{"backgroundColor":"#badac1", "borderRadius":"10%"
                                                         , "width":"60%", "textAlign":"left"
@@ -137,7 +137,7 @@ class Chatroom extends Component {
                                             </div>
                                         </div>)}
                                     else {
-                                        return (<div id="message" className="chat-message" style={{"margin":"3px", "width":"95%", "clear":"both"}} >
+                                        return (<div id="message" key={c._id} className="chat-message" style={{"margin":"3px", "width":"95%", "clear":"both"}} >
                                             <div style={{"fontSize":"small", "width":"100%", "textAlign":"left",paddingTop:"15px",paddingBottom:"5px"}}>{c.from}</div>
                                             <div style={{"backgroundColor":"#f3f3f3", "borderRadius":"10%"
                                                         , "width":"60%", "textAlign":"left"

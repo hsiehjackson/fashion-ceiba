@@ -21,19 +21,27 @@ $ From Github:
     * npm run server (./fashion-ceiba/)  - port:4000
     * npm run client1 (./fashion-ceiba/) - port:3000
     * npm run client2 (./fashion-ceiba/) - port:3001
-    * If you want to use teacher mode, just sing up with name/email/pwd = ADMIN
+    * If you want to use teacher mode, just sign up with name/email/pwd = ADMIN
 $ From Deployed Link:
     * open http://fashion-ceiba.herokuapp.com/login
     * and enjoy
 ```
-畫面一開始為登入介面，可以進行註冊或者是登入，若以(name/email/pwd == ADMIN/ADMIN/ADMIN)登入即為老師模式，其他皆為學生模式。進入下一個畫面以後，除了基本的ceiba功能以外，多加了上傳pdf(Upload pdf)的功能，可以進行瀏覽編輯，更可以像簡報一樣繪畫註記，另外同步上，所有學生可以收到老師的即時編輯，也可以在自己的pdf上新增筆記，而不會影響到其他用戶。此外，為了增進上課互動，還新增了聊天室功能，所有人可以即時收到訊息通知，知道其他同學對那些地方有疑問，老師也可以收到問題並將疑問加到投影片內。
-
-
-## 其他說明
-* Upload Large Files:
-因為我們的PDF可能檔案過大，所以要處理從client傳到server端，還有server端傳到database的問題。其中從client傳到server端要使用apollo-upload來將檔案切成一個filestream傳，並且要提高上限。再來server傳到client端要使用GridFS來解決mogodb只能上傳上限16mb的問題，將檔案切成小檔案再存到database中。
-* Authentication:
-使用者資訊存在session的cookie當中，每次會存在一段時間才會自動斷開，中途離開到其他網頁，再回來還會是登入狀態。
+* 登入介面，可以註冊或登入
+    * 老師 (name/email/pwd == ADMIN/ADMIN/ADMIN)
+    * 學生 (其他帳號)
+* Ceiba 基本功能
+    * 課程資訊
+    * 老師資訊
+    * 公佈欄/月曆
+* PDF 上課講義瀏覽
+    * 上傳大檔案 (需等一段時間)
+    * 編輯學生自己的筆記 (即時)
+    * 瀏覽老師上課的筆記 (即時)
+    * 刪除當頁筆記
+* 提出/回答問題 (聊天室)
+    * 未讀訊息量
+    * 學生提出問題
+    * 老師收到問題並回答
 
 ## 使用與參考之框架/模組/原始碼
 ```
