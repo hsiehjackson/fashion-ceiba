@@ -48,6 +48,9 @@ $ From Deployed Link:
 * 劉芸欣：
 這次我們的project因為是照功能來分工，所以大家真的是從前端後端db整個架構都要寫過一遍，真的是滿累人的xD 但同也覺得算是學得很扎實，寫了一學期的web發現其實web跟其他程式語言滿不一樣的，也其實沒有比較簡單，包括coding架構或是執行的順序，每次debug都覺得又大開眼界了一次！
 
+* 蘇峯廣：
+這次的期末project，很確實的把老師上課上的 database 到 browser的css style 全部實作一遍，對於之前不清楚的細節全部都搞清楚了，特別是node.js跟graphql比較難上手的部分，實力也大大提升。還有在有一些細節，像是mutation/subscription的連接及斷開等等，都因為有bug的關係，花了特別多時間重新設計，甚至手刻需要drawer等fancy的介面，因此對於很多語法都更加的了解。
+
 ## 使用之第三方套件、框架、原始碼
 ```
 * mongodb/mongoose/mongoose-gridfs
@@ -61,7 +64,7 @@ $ From Deployed Link:
 * react.js
 ```
 ## Demo 影片連結
-[TODO放連結](TODO放連結)
+[Demo-video](TODO放連結)
 
 ## 每組組員的貢獻
 ```
@@ -79,3 +82,4 @@ $ 蘇峯廣(B04901070)
 
 ## 對於此課程的建議
 * 建議上課之前可以先創好每次作業要使用的檔案，同學也可以直接跟著範例上課。
+* 建議可以每個禮拜都有個小practice可以練習，可以讓每個小部分都更加紮實
