@@ -13,7 +13,7 @@ $ project 描述：一個課程教學平台，用於輔助教學系統，即時�
 [Deployed-website](https://fashion-ceiba.herokuapp.com/)
 
 ## Demo 影片連結
-[Demo-video](TODO放連結)
+[Demo-video](https://youtu.be/NDc-VVZYLH0)
 
 ## 安裝/使用/操作方式
 ```
