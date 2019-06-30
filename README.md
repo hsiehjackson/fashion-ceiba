@@ -9,7 +9,7 @@ $ 題目名稱 : (Group 03) Fashion Ceiba
 $ 組員：解正平(B04901020)、劉芸欣(B04901152)、蘇峯廣(B04901070)
 $ project 描述：一個課程教學平台，用於輔助教學系統，即時筆記、發問、更新上課講義。
 ```
-## Deployed 連結
+## Deployed 網站連結
 http://fashion-ceiba.herokuapp.com/
 
 ## Demo 影片連結
