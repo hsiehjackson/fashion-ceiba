@@ -1,5 +1,5 @@
 # [107-2] Web Programming Final - Fashion Ceiba
-This project was developed by [JacksonHsieh](https://github.com/hsiehjackson), [CynthiaYLiu](https://github.com/CynthiaYLiu), and [PierreSue](https://github.com/PierreSu). You can view this project on the browser through the following link [Fashion-Ceiba](http://fashion-ceiba.herokuapp.com/login) and see the demonstration video by opening [Demo-video](TODO放連結).
+This project was developed by [JacksonHsieh](https://github.com/hsiehjackson), [CynthiaYLiu](https://github.com/CynthiaYLiu), and [PierreSue](https://github.com/PierreSu). You can view this project on the browser through the following link [Fashion-Ceiba](https://fashion-ceiba.herokuapp.com/) and see the demonstration video by opening [Demo-video](TODO放連結).
 
 <img src="https://i.imgur.com/s3AY3au.jpg" alt="drawing"/> 
 
@@ -10,7 +10,7 @@ $ 組員：解正平(B04901020)、劉芸欣(B04901152)、蘇峯廣(B04901070)
 $ project 描述：一個課程教學平台，用於輔助教學系統，即時筆記、發問、更新上課講義。
 ```
 ## Deployed 網站連結
-[Deployed-website](http://fashion-ceiba.herokuapp.com/)
+[Deployed-website](https://fashion-ceiba.herokuapp.com/)
 
 ## Demo 影片連結
 [Demo-video](TODO放連結)
