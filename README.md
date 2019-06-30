@@ -21,7 +21,7 @@ $ From Github:
     * npm run server (./fashion-ceiba/)  - port:4000
     * npm run client1 (./fashion-ceiba/) - port:3000
     * npm run client2 (./fashion-ceiba/) - port:3001
-    * If you want to use teacher mode, just sing up with name/email/pwd ADMIN
+    * If you want to use teacher mode, just sing up with name/email/pwd = ADMIN
 $ From Deployed Link:
     * open http://fashion-ceiba.herokuapp.com/login
     * and enjoy
