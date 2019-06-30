@@ -26,7 +26,7 @@ $ From Github:
     * npm run client2 (./fashion-ceiba/) - port:3001
     * If you want to use teacher mode, just sign up with name/email/pwd = ADMIN
 $ From Deployed Link:
-    * open http://fashion-ceiba.herokuapp.com/login
+    * open https://fashion-ceiba.herokuapp.com/login
     * and enjoy
 ```
 * 登入介面，可以註冊或登入
