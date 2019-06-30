@@ -12,6 +12,9 @@ $ project 描述：一個課程教學平台，用於輔助教學系統，即時�
 ## Deployed 連結
 http://fashion-ceiba.herokuapp.com/
 
+## Demo 影片連結
+[Demo-video](TODO放連結)
+
 ## 安裝/使用/操作方式
 ```
 $ From Github:
@@ -71,8 +74,6 @@ $ From Deployed Link:
 * node-sass
 * react.js
 ```
-## Demo 影片連結
-[Demo-video](TODO放連結)
 
 ## 每組組員的貢獻
 ```
